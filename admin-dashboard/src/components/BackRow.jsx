@@ -1,4 +1,5 @@
 import product_avatar from '../assets/images/product_dummy.svg';
+import CardBackRow from './CardBackRow';
 const BackRow = () => {
     return(
         <div className="row">
@@ -31,48 +32,13 @@ const BackRow = () => {
             </div>
             <div className="card-body">
                 <div className="row">
-                    <div className="col-lg-6 mb-4">
-                        <div className="card bg-info text-white shadow">
-                            <div className="card-body">
-                                Category 01
-                            </div>
-                        </div>
-                    </div>
-                    <div className="col-lg-6 mb-4">
-                        <div className="card bg-info text-white shadow">
-                            <div className="card-body">
-                                Category 02
-                            </div>
-                        </div>
-                    </div>
-                    <div className="col-lg-6 mb-4">
-                        <div className="card bg-info text-white shadow">
-                            <div className="card-body">
-                                Category 03
-                            </div>
-                        </div>
-                    </div>
-                    <div className="col-lg-6 mb-4">
-                        <div className="card bg-info text-white shadow">
-                            <div className="card-body">
-                                Category 04
-                            </div>
-                        </div>
-                    </div>
-                    <div className="col-lg-6 mb-4">
-                        <div className="card bg-info text-white shadow">
-                            <div className="card-body">
-                                Category 05
-                            </div>
-                        </div>
-                    </div>
-                    <div className="col-lg-6 mb-4">
-                        <div className="card bg-info text-white shadow">
-                            <div className="card-body">
-                                Category 06
-                            </div>
-                        </div>
-                    </div>
+                    <CardBackRow category="Category 01" />
+                    <CardBackRow category="Category 02" />
+                    <CardBackRow category="Category 03"/>
+                    <CardBackRow category="Category 04" />
+                    <CardBackRow category="Category 05" />
+                    <CardBackRow category="Category 06"/>
+                    
                 </div>
             </div>
         </div>
