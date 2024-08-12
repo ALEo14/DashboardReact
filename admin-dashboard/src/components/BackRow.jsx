@@ -1,3 +1,4 @@
+import product_avatar from '../assets/images/product_dummy.svg';
 const BackRow = () => {
     return(
         <div className="row">
@@ -12,7 +13,7 @@ const BackRow = () => {
                 <img
                                 className="img-fluid px-3 px-sm-4 mt-3 mb-4"
                                 style={{ width: "25rem" }} 
-                                src="assets/images/product_dummy.svg"
+                                src={product_avatar}
                                 alt="image dummy"
                             />
                 </div>
