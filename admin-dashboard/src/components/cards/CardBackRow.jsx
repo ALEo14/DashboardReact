@@ -1,5 +1,5 @@
-function CardBackRow(props ){
-    const {category} = props;
+function CardBackRow({category} ){
+    
     return (
         <div className="col-lg-6 mb-4">
                         <div className="card bg-info text-white shadow">

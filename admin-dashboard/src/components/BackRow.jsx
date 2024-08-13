@@ -1,5 +1,5 @@
 import product_avatar from '../assets/images/product_dummy.svg';
-import CardBackRow from './CardBackRow';
+import CardBackRow from './cards/CardBackRow';
 const BackRow = () => {
     return(
         <div className="row">
