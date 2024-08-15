@@ -1,41 +1,13 @@
-function ProductsDatabase(){
-    
-	let productos = [
-		{
-			name:"Monitor Samsung 24 pulgadas",
-			description:"Monitor gamer de 24 pulgadas para jugar ",
-			price:475000,
-			categorie:"gamer",
-			colors:"black",
-			stock:15
-		},
-		{
-			name:"Ryzen 5 5600GT",
-			description:"Procesador AMD ",
-			price:326843,
-			categorie:"Procesadores",
-			colors:"nonek",
-			stock:13
-		},
-		{
-			name:"Memorias ram 8GB 3200Mhz",
-			description:"Memoria ram DDR4 ",
-			price:36000,
-			categorie:"Memorias Ram",
-			colors:"black",
-			stock:10
-		},
-		{
-			name:"Disco Solido Kingston 256 GB",
-			description:"Disco de estado solido",
-			price:32762,
-			categorie:"Discos",
-			colors:"black",
-			stock:8
-		},
-		
+import React, {useState, useEffect} from 'react';
 
-	]
+function ProductsDatabase(){
+const [productos,setProductos] = useState([]);
+useEffect(()=>{
+	fetch('./productos.json')
+	.then(response => response.json())
+	.then(data=> setProductos(data))
+	.catch(error=> console.error('Error fetching data ',error))
+},[])
 	
 	
 	
