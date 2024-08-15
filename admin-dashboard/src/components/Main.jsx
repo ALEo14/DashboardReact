@@ -1,6 +1,7 @@
 import Topbar from './Topbar'
 import PageContent from './Pagecontent';
 import Footer from './Footer'
+import ProductsDatabase from './ProductsDatabase';
 function Main(){
     return(
 
@@ -8,6 +9,7 @@ function Main(){
         <div id="content">
             <Topbar/>
             <PageContent/>
+            <ProductsDatabase/>
            <Footer/>
         </div>
     </div>
