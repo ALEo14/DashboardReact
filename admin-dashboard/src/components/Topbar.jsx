@@ -8,8 +8,9 @@ function Topbar() {
                 <i className="fa fa-bars"></i>
             </button>
 
-            <ul className="navbar-nav ml-auto">
+            <ul className="navbar-nav ml-auto flex-nowrap "  >
 
+            
                 <li className="nav-item dropdown no-arrow mx-1">
                     <a className="nav-link dropdown-toggle" href="/" id="alertsDropdown">
                         <i className="fas fa-bell fa-fw"></i>

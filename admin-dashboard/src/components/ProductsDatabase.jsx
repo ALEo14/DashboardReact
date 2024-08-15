@@ -1,4 +1,4 @@
-import React, {useState, useEffect} from 'react';
+import  {useState, useEffect} from 'react';
 
 function ProductsDatabase(){
 const [productos,setProductos] = useState([]);
@@ -20,7 +20,7 @@ useEffect(()=>{
                         <h1 className="h3 mb-2 text-gray-800">All the products in the Database</h1>
 						<div className="card-body">
 							<div className="table-responsive">
-								<table className="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+								<table className="table table-bordered" id="dataTable" width="100%" >
 									<thead>
 										<tr>
 											<th>Name</th>
